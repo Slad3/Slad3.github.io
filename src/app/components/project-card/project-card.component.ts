@@ -3,6 +3,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { HttpClient, HttpRequest, HttpResponse } from '@angular/common/http';
 
 import { Observable, throwError, Subject } from 'rxjs';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'project-card',
