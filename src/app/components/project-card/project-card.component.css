@@ -25,6 +25,10 @@
 	
 }
 
+.projectLink{
+	z-index: 90;
+}
+
 .project > a{
 	color: white;
 	font-style: normal;
@@ -54,6 +58,8 @@ a:hover{
 .links {
   float: right;
   height: 50px;
+  position: relative;
+  z-index: 99;
 }
 
 .link {
