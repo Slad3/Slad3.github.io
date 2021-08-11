@@ -64,7 +64,6 @@ export class ProjectsPageComponent implements OnInit {
       (event) => {
         if (event instanceof HttpResponse) {
 		  this.projects = JSON.parse(event.body.toString());
-		  console.log(this.projects)
 		  this.loaded = true;
         }
       },
