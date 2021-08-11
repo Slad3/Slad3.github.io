@@ -11,6 +11,11 @@
 	height: auto;
   }
   
+  project-card {
+	display: flex;
+	margin-bottom: 30px;
+  }
+
 
   .sectionTitle > a {
 	font-size: 20px;

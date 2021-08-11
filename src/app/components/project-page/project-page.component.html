@@ -1,9 +1,6 @@
-<div *ngIf="this.loaded">
-
-
-	<div class="project" (click)="onclick($event)">
-		<!-- <a [routerLink]="['/project']" [queryParams]="{name:  this.project['name']}" routerLinkActive="router-link-active" class=".projectLink"> -->
-		<div class=".projectLink" >
+<div id="projectContent" class="content">
+	<div *ngIf="this.loaded">
+		<div class="project block">
 			<h3>
 				<div class="links">
 					<div class="link" *ngIf="this.project['links']['github'] !== ''">
@@ -42,9 +39,18 @@
 					</li>
 				</div>
 			</div>
+
+			<div id="contentList">
+				<div class="contentBlob" *ngFor="let cont of this.project['content']">
+					{{cont.type}}
+					<div *ngIf="cont.type == 'text'">
+						{{cont.content}}
+					</div>
+
+					<div *ngIf="cont.type === 'youtube'">
+						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/LrC9IGf1Qm0?list=PLHJV6fEERjQZ7VUckzEGeytzzZc13x3oL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-
- 
-
-</div>

@@ -15,7 +15,7 @@ The main goal of this project is to provide public visuals for some of the side 
 If you've ever though of a quote from a TV show (specifically The Office) but just can't place where it is in the show, you're not alone. This page allows you to enter a quote from the The Office, and see where in the series that quote appears in the series, who said it, and who says it the most in the series.
 
 
-### Social Media Analyzers
+<!-- ### Social Media Analyzers
 
 The Social media analyzer allows a user to upload their user data, and recieve back results about the data that their social media sites collects.
 
@@ -32,7 +32,7 @@ With only the timestamps and type of content (aka not reading texts, that's cree
 #### **[Instagram Analyzer](https://benbarcaskey.com/Instagram)**
 
 - Account History:\
-	This just diplays an easy to read table of the history of the devices your account was logged into. This includes the IP Address, timestamp, client type, and device ID.
+	This just diplays an easy to read table of the history of the devices your account was logged into. This includes the IP Address, timestamp, client type, and device ID. -->
 
 
 ## Technology

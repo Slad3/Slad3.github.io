@@ -32,6 +32,7 @@ import { TheOfficeScriptAnalyzerComponent } from './components/datascience/the-o
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsPageComponent } from './components/projects-page/projects-page.component';
+import { ProjectPageComponent } from './components/project-page/project-page.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { ProjectsPageComponent } from './components/projects-page/projects-page.
     ProjectCardComponent,
     SkillsComponent,
     ProjectsPageComponent,
+    ProjectPageComponent,
   ],
   imports: [
 	  	BrowserModule,

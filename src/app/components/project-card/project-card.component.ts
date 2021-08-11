@@ -3,6 +3,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { HttpClient, HttpRequest, HttpResponse } from '@angular/common/http';
 
 import { Observable, throwError, Subject } from 'rxjs';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'project-card',
@@ -90,5 +91,12 @@ export class ProjectCardComponent implements OnInit {
 
   loadProject() {
     this.loaded = true;
+  }
+
+  public onclick(event){
+	if(event.target.parentNode.tagName !== "A"){		
+		// window.location.href = window.location.origin + "/project?name=" + this.project['name']
+	}
+	
   }
 }

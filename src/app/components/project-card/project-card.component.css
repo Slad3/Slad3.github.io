@@ -16,6 +16,29 @@
   background-color: rgba(28, 28, 28, 0.6);
 }
 
+.project:hover{
+	/* border: 1px solid #0f4c75 ; */
+	border: 1px solid #007bff ;
+	background-color: rgba(28, 28, 28, 1);
+	font-style: normal;
+	text-decoration: none;
+	
+}
+
+.projectLink{
+	z-index: 90;
+}
+
+.project > a{
+	color: white;
+	font-style: normal;
+}
+
+a:hover{
+	font-style: normal;
+	text-decoration: none;
+}
+
 .projectTitle {
   margin-bottom: 15px;
   font-weight: bold;
@@ -35,6 +58,8 @@
 .links {
   float: right;
   height: 50px;
+  position: relative;
+  z-index: 99;
 }
 
 .link {

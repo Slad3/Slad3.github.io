@@ -13,6 +13,7 @@ import { PublicationsComponent } from './components/publications/publications.co
 import { SkillsComponent } from './components/skills/skills.component';
 import { TheOfficeScriptAnalyzerComponent } from './components/datascience/the-office-script-analyzer/the-office-script-analyzer.component';
 import { ProjectsPageComponent } from './components/projects-page/projects-page.component';
+import { ProjectPageComponent} from './components/project-page/project-page.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,6 +21,8 @@ const routes: Routes = [
   { path: 'experience', component: ProfessionalExperienceComponent },
   { path: 'publications', component: PublicationsComponent },
   { path: 'projects', component: ProjectsPageComponent },
+  { path: 'project', component:  ProjectPageComponent},
+  { path: 'project/:title', component:  ProjectPageComponent},
   { path: 'datascience', component: DatascienceHomeComponent },
   { path: 'FacebookAnalysis', component: FacebookDataAnalysisComponent },
   { path: 'InstagramAnalysis', component: InstagramDataAnalysisComponent },
