@@ -92,4 +92,11 @@ export class ProjectCardComponent implements OnInit {
   loadProject() {
     this.loaded = true;
   }
+
+  public onclick(event){
+	if(event.target.parentNode.tagName !== "A"){		
+		// window.location.href = window.location.origin + "/project?name=" + this.project['name']
+	}
+	
+  }
 }

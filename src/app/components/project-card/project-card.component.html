@@ -1,9 +1,9 @@
 <div *ngIf="this.loaded">
 
 
-	<div class="project">
+	<div class="project" (click)="onclick($event)">
 		<!-- <a [routerLink]="['/project']" [queryParams]="{name:  this.project['name']}" routerLinkActive="router-link-active" class=".projectLink"> -->
-		<a class=".projectLink">
+		<div class=".projectLink" >
 			<h3>
 				<div class="links">
 					<div class="link" *ngIf="this.project['links']['github'] !== ''">
@@ -42,7 +42,7 @@
 					</li>
 				</div>
 			</div>
-		</a>
+		</div>
 	</div>
 
  
