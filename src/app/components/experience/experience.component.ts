@@ -9,6 +9,26 @@ import { HttpClient, HttpRequest, HttpResponse } from '@angular/common/http';
 })
 export class ExperienceComponent implements OnInit {
   experience = [
+	{
+		title: 'Software Engineer Intern',
+		experience: 'Internship',
+		place: 'White House Custom Color',
+		image: '../../assets/companyLogos/whcclogo.png',
+		imageCredit: 'Image credit to WHCC',
+		date: 'June 21st - Sept 2th 2021',
+		description: [
+		  "",
+		  '',
+		  '',
+		],
+		skills: [
+		  'TypeScript',
+		  'AWS Lambda',
+		  'MongoDB',
+		  'AWS SQS',
+		  'Serverless'
+		],
+	  },
     {
       title: 'Software Engineer Intern',
       experience: 'Internship',
