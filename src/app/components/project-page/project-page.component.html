@@ -19,9 +19,9 @@
 			<div class="pin" *ngIf="this.project['pin']">
 				<img src="../../../assets/icons/pinWhite.png" />
 			</div>
-			<h3 class="projectTitle">
+			<h2 class="projectTitle">
 				{{ this.project["title"] }}
-			</h3>
+			</h2>
 
 			<p class="date">Last Updated: {{ this.project["date"] }}</p>
 			<p class="typeofProject">{{ this.project["typeOfProject"] }}</p>
@@ -48,9 +48,21 @@
 					</div>
 
 					<div *ngIf="cont.type === 'youtube'">
-						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/LrC9IGf1Qm0?list=PLHJV6fEERjQZ7VUckzEGeytzzZc13x3oL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="100%" height="100%"
+							src="https://www.youtube.com/embed/LrC9IGf1Qm0?list=PLHJV6fEERjQZ7VUckzEGeytzzZc13x3oL"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
 					</div>
 				</div>
+			</div>
+
+			<div class="readme" *ngIf="readme">
+				<h3>
+					Project readme
+				</h3>
+				<markdown [text]="this.readme">
+				</markdown>
 			</div>
 		</div>
 	</div>

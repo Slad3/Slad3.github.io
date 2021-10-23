@@ -17,9 +17,9 @@ export class ExperienceComponent implements OnInit {
 		imageCredit: 'Image credit to WHCC',
 		date: 'June 21st - Sept 2th 2021',
 		description: [
-		  "",
-		  '',
-		  '',
+		  "Summer remote Co-op with White House Custom Color completely redesigning and overhauling structure of production stats system which has been used, but untouched development wise for 5 years. This was a project the current team always wanted to get to, but didn't have the time to get to.",
+		  'Since there was very little documentation (most parts had no documentation) I spent the better part of the first 3 weeks figuring out and diagramming how the current system actually worked. Most of the code was either running off an old repository that only worked with specific old versions of NodeJS that were not compatable with the current version, or not hosted in any repository.',
+		  'We then overhauled the current solution and implemented a cloud based solution utilizing individual microservices, timeseries database as a perpetual data layer, and ',
 		],
 		skills: [
 		  'TypeScript',

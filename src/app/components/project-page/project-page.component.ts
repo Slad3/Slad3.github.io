@@ -32,13 +32,15 @@ export class ProjectPageComponent implements OnInit {
     production: '',
   };
 
+  readme: string;
+
   constructor(
     private http: HttpClient,
     private activatedRoute: ActivatedRoute
   ) {
     console.log(location);
     if (location.host.toString() === 'localhost:4200') {
-        // this.backendUrl = 'http://localhost:8080/';
+      // this.backendUrl = 'http://localhost:8080/';
     } else {
     }
   }
@@ -105,7 +107,19 @@ export class ProjectPageComponent implements OnInit {
     return { file: response.asObservable() };
   }
 
-  loadProject() {
+  async loadProject() {
+    if (
+      this.project['links'].github !== undefined &&
+      this.project['links'].github !== ''
+    ) {
+      let githubUrl = String(this.project['links'].github);
+      let readmeUrl =
+        'https://raw.githubusercontent.com/' +
+        githubUrl.substr('https://github.com/'.length, githubUrl.length) +
+        '/master/README.md';
+      let data = await (await fetch(readmeUrl)).text();
+      this.readme = String(data);
+    }
     this.loaded = true;
   }
 }
