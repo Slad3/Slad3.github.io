@@ -32,6 +32,7 @@ export class ProjectPageComponent implements OnInit {
     production: '',
   };
 
+  githubUrl: string;
   readme: string;
 
   constructor(
@@ -112,10 +113,10 @@ export class ProjectPageComponent implements OnInit {
       this.project['links'].github !== undefined &&
       this.project['links'].github !== ''
     ) {
-      let githubUrl = String(this.project['links'].github);
+      this.githubUrl = String(this.project['links'].github);
       let readmeUrl =
         'https://raw.githubusercontent.com/' +
-        githubUrl.substr('https://github.com/'.length, githubUrl.length) +
+        this.githubUrl.substr('https://github.com/'.length, this.githubUrl.length) +
         '/master/README.md';
       let data = await (await fetch(readmeUrl)).text();
       this.readme = String(data);

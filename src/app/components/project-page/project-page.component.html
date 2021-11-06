@@ -58,9 +58,11 @@
 			</div>
 
 			<div class="readme" *ngIf="readme">
-				<h3>
-					Project readme
-				</h3>
+				<a target="_blank" href="{{this.githubUrl}}">
+					<h3>
+						Project readme
+					</h3>
+				</a>
 				<markdown [text]="this.readme">
 				</markdown>
 			</div>
