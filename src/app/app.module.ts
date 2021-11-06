@@ -33,6 +33,7 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsPageComponent } from './components/projects-page/projects-page.component';
 import { ProjectPageComponent } from './components/project-page/project-page.component';
+import { MarkdownComponent } from './components/markdown-display/markdown-display.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { ProjectPageComponent } from './components/project-page/project-page.com
     SkillsComponent,
     ProjectsPageComponent,
     ProjectPageComponent,
+    MarkdownComponent,
   ],
   imports: [
 	  	BrowserModule,

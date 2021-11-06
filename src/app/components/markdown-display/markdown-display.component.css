@@ -1,0 +1,11 @@
+#full{
+	outline: 1px white dashed;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+#full > h1 {
+	border-bottom: 1px solid white;
+	color: red;
+} 

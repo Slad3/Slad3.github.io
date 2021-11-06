@@ -46,7 +46,6 @@ export class SinglepostComponent implements OnInit {
 
 			  for(let po in received){
 				  let temp = JSON.parse(received[po])
-				  console.log(temp.Post)
 				this.post = new Post(temp.Post)
 			  }
 
