@@ -2,6 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 
 import { HttpClient, HttpRequest, HttpResponse } from '@angular/common/http';
 
+import { Router } from '@angular/router';
+
 import { Observable, throwError, Subject } from 'rxjs';
 import { RouterModule } from '@angular/router';
 
@@ -34,9 +36,9 @@ export class ProjectCardComponent implements OnInit {
     production: '',
   };
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private route: Router) {
     if (location.host.toString() === 'localhost:4200') {
-    //   this.backendUrl = 'http://localhost:8080/';
+      //   this.backendUrl = 'http://localhost:8080/';
     } else {
     }
   }
@@ -93,10 +95,11 @@ export class ProjectCardComponent implements OnInit {
     this.loaded = true;
   }
 
-  public onclick(event){
-	if(event.target.parentNode.tagName !== "A"){		
-		// window.location.href = window.location.origin + "/project?name=" + this.project['name']
-	}
-	
+  onclick(event) {
+    if (event.target.parentNode.tagName !== 'A') {
+      this.route.navigate(['project'], {
+        queryParams: { name: this.project['name'] },
+      });
+    }
   }
 }

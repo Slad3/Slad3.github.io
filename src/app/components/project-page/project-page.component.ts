@@ -39,7 +39,6 @@ export class ProjectPageComponent implements OnInit {
     private http: HttpClient,
     private activatedRoute: ActivatedRoute
   ) {
-    console.log(location);
     if (location.host.toString() === 'localhost:4200') {
       // this.backendUrl = 'http://localhost:8080/';
     } else {

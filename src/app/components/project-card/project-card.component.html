@@ -1,9 +1,7 @@
 <div *ngIf="this.loaded">
-
-
-	<div class="project" (click)="onclick($event)">
-		<a [routerLink]="['/project']" [queryParams]="{name:  this.project['name']}"
-			routerLinkActive="router-link-active" class=".projectLink">
+	<div class="project" (click)="this.onclick($event)">
+		<!-- <a [routerLink]="['/project']" [queryParams]="{name:  this.project['name']}"
+			routerLinkActive="router-link-active" class=".projectLink"> -->
 			<div class=".projectLink">
 				<h3>
 					<div class="links">
@@ -44,6 +42,6 @@
 					</div>
 				</div>
 			</div>
-		</a>
+		<!-- </a> -->
 	</div>
 </div>
