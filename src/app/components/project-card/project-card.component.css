@@ -1,0 +1,120 @@
+.project {
+  min-width: 275px;
+  max-width: 700px;
+
+  height: 100%;
+  max-height: 600px;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  border-radius: 15px;
+  padding: 27px;
+  border: 1px dashed whitesmoke;
+  color: whitesmoke;
+  /* background-color: rgba(28, 28, 28, 0.8); */
+  background-color: rgba(28, 28, 28, 0.6);
+
+  cursor: pointer;
+}
+
+.project:hover{
+	/* border: 1px solid #0f4c75 ; */
+	border: 1px solid #007bff ;
+	background-color: rgba(28, 28, 28, 1);
+	font-style: normal;
+	text-decoration: none;
+	
+}
+
+.projectLink{
+	z-index: 90;
+}
+
+.project > a{
+	color: white;
+	font-style: normal;
+}
+
+a:hover{
+	font-style: normal;
+	text-decoration: none;
+}
+
+.projectTitle {
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 27px;
+}
+
+.pin {
+  float: left;
+  margin-left: 0px;
+  margin-right: 7px;
+}
+
+.pin > img {
+  width: 25px;
+}
+
+.links {
+  float: right;
+  height: 50px;
+  position: relative;
+  z-index: 99;
+}
+
+.link {
+  float: right;
+}
+
+.link > a {
+  padding: 4px;
+  padding-top: 2px;
+  padding-bottom: 6px;
+
+  background-color: whitesmoke;
+
+  margin-bottom: 5px;
+  margin-right: 5px;
+
+  border-radius: 50%;
+}
+
+.link > a > img {
+  height: 30px;
+  width: 30px;
+  align-self: center;
+}
+
+.typeofProject {
+  font-size: 11pt;
+}
+
+.tags {
+  list-style: none;
+  height: auto;
+}
+
+.tags > li {
+  float: left;
+  display: block;
+
+  color: whitesmoke;
+
+  border: 1px dashed whitesmoke;
+
+  border-radius: 8px;
+
+  padding: 5px;
+  margin: 5px;
+}
+
+.date {
+  float: right;
+  font-size: 10pt;
+  margin-left: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+}
