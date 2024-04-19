@@ -28,7 +28,7 @@ jobs:
 
 
       - name: Boggy woggy
-        run: pwd
+        run: cd ../
 
       - name: build
         env:
