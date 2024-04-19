@@ -6,13 +6,6 @@ Front-end for my personal website, hosted on GitHub pages.
 
 The main goal of this site is to be my official portfolio and provide public visuals for some of the side projects and data science that I like to do.
 
-## Data Science Pages
-
-### [The Office Script Analyzer](https://benbarcaskey.com/TheOfficeScriptAnalysis)
-
-If you've ever though of a quote from a TV show (specifically The Office) but just can't place where it is in the show, you're not alone. This page allows you to enter a quote from the The Office, and see where in the series that quote appears in the series, who said it, and who says it the most in the series.
-
-
 ## Technology
 
 The frontend is made with Angular framework, using Typesript and raw CSS.
