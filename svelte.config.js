@@ -18,7 +18,7 @@ const config = {
         },
         paths: {
 
-            base: process.env.NODE_ENV === 'production' ? '/PersonalWebFrontend' : '',
+            base: process.env.NODE_ENV === 'production' ? '/' : '',
 
         }
     },
