@@ -26,6 +26,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+
+      - name: Boggy woggy
+        run: pwd
+
       - name: build
         env:
           BASE_PATH: '/Slad3.github.iosgdfsg'
