@@ -18,7 +18,7 @@ const config = {
         },
         paths: {
 
-            base: process.env.NODE_ENV === 'production' ? '/benbarcaskey.com' : '',
+            base: process.argv.includes('dev') ? '' : '/Slad3.github.io'
 
         }
     },
