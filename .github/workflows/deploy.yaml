@@ -28,7 +28,7 @@ jobs:
 
       - name: build
         env:
-          BASE_PATH: '/Slad3.github.io'
+          BASE_PATH: '/Slad3.github.iosgdfsg'
         run: |
           pnpm run build
 
