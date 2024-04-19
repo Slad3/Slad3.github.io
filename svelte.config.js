@@ -1,5 +1,8 @@
-import adapter from "@sveltejs/adapter-auto";
+import adapter from "@sveltejs/adapter-static";
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
+
+const dev = process.argv.includes('dev')
+
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -13,12 +16,11 @@ const config = {
         }),
         alias: {
             $routes: "./src/routes",
-            // '$routes/': './src/routes/index',
             "$routes/*": "./src/routes/index/*",
         },
         paths: {
 
-            base: process.argv.includes('dev') ? '' : '/Slad3.github.io'
+            base: dev ? '' : process.env.BASE_PATH
 
         }
     },
