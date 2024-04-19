@@ -28,7 +28,7 @@ jobs:
 
       - name: build
         env:
-          BASE_PATH: ''
+          BASE_PATH: '/Slad3.github.io'
         run: |
           pnpm run build
 
