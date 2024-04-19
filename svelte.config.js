@@ -18,7 +18,7 @@ const config = {
         },
         paths: {
 
-            base: process.argv.includes('dev') ? '' : '/Slad3.github.io'
+            base: process.argv.includes('dev') ? '' : '..'
 
         }
     },
