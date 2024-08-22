@@ -48,15 +48,15 @@
         "React",
       ],
     },
-    Linux: {
-      iconURL: linuxIcon,
+    Rust: {
+      iconURL: rustIcon,
       subSkills: [
-        "Systemctl Services",
-        "Raspberry Pi Development",
-        "GUI and terminal/SSH",
-        "Debian and Arch",
-        "Apache & Nginx http Server",
-        "Bash Scripting",
+        "Rocket",
+        "Rocket_ws (socket.io)",
+        "JSON/XML parsing",
+        "Asynchronous Multithreading",
+        "Serde (serde_json)",
+        "Tokio",
       ],
     },
     "Java/Kotlin": {
@@ -70,7 +70,6 @@
         "JSON/CSV Parsing",
       ],
     },
-
     "Other Languages / Framworks": {
       subSkills: [
         "SQL",
@@ -81,9 +80,16 @@
         "C#",
       ],
     },
-    Rust: {
-      iconURL: rustIcon,
-      subSkills: ["Rocket", "Rocket_ws", "Serde (serde_json)", "pyo3"],
+    Linux: {
+      iconURL: linuxIcon,
+      subSkills: [
+        "Systemctl Services",
+        "Raspberry Pi Development",
+        "GUI and terminal/SSH",
+        "Debian and Arch",
+        "Apache & Nginx http Server",
+        "Bash Scripting",
+      ],
     },
     "Other Skills": {
       subSkills: [

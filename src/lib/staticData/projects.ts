@@ -9,7 +9,7 @@ export const projects = [
             "production": "https://addons.mozilla.org/en-US/firefox/addon/toomanytabs/"
         },
         "name": "TooManyTabs",
-        "pin": true,
+        "pin": false,
         "tags": [
             "Firefox",
             "Browser Extension",
@@ -20,7 +20,27 @@ export const projects = [
         "typeOfProject": "Browser Extension"
     },
     {
-        "date": "2020-12-03",
+        "date": "2024-08-15",
+        "description": "Http server that allows a user to control their in-home smartplugs (and other forms of relays with a boolean state) externally from the respective smartplug's ecosystem. Rebuilt in Rust.",
+        "hidden": false,
+        "id": "",
+        "links": {
+            "github": "https://github.com/Slad3/RemoteRelayRust",
+            "production": ""
+        },
+        "name": "RemoteRelayRust",
+        "pin": true,
+        "tags": [
+            "Rust",
+            "Rocket",
+            "MongoDB",
+            "SmartHome"
+        ],
+        "title": "Remote Relay Rust",
+        "typeOfProject": "API / SmartHome"
+    },
+    {
+        "date": "2024-08-22",
         "description": "My personal website/portfolio, hosted on GitHub pages. The frontend of my data science projects will most likely be hosted here. ",
         "hidden": false,
         "id": "",
