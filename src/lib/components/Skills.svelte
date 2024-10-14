@@ -22,6 +22,7 @@
         "MatPlotLib",
         "Plotly",
         "TensorFlow",
+        "SQLAlchemy",
       ],
     },
     AWS: {
@@ -51,12 +52,12 @@
     Rust: {
       iconURL: rustIcon,
       subSkills: [
-        "Rocket",
+        "Wasm Development",
+        "Rocket Framework",
         "Rocket_ws (socket.io)",
-        "JSON/XML parsing",
         "Asynchronous Multithreading",
-        "Serde (serde_json)",
-        "Tokio",
+        "Serde_json",
+        "Tokio Async",
       ],
     },
     "Java/Kotlin": {
@@ -72,7 +73,7 @@
     },
     "Other Languages / Framworks": {
       subSkills: [
-        "SQL",
+        "SQL (Postgres)",
         "MongoDB",
         "Postgres TimescaleDB",
         "C/C++",
@@ -86,7 +87,7 @@
         "Systemctl Services",
         "Raspberry Pi Development",
         "GUI and terminal/SSH",
-        "Debian and Arch",
+        "Debian, Fedora, Arch",
         "Apache & Nginx http Server",
         "Bash Scripting",
       ],

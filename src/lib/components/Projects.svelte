@@ -8,15 +8,13 @@
   import Project from "./Project.svelte";
 
   import { fetchJSONData } from "$lib/composables/data-loader";
-  import { projects } from "$lib/staticData/projects";
 
-  //   let projects = [];
+  let projects = [];
   let panelOpen = false;
   let dataAvailable = false;
 
   onMount(async () => {
-    // Disbled till squarspace fixes their garbage domain service
-    // projects = await fetchJSONData("projects");
+    projects = await fetchJSONData("projects");
     dataAvailable = projects.length > 0;
   });
 </script>

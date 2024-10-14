@@ -7,15 +7,12 @@
   import Accordion, { Panel, Header, Content } from "@smui-extra/accordion";
 
   import { fetchJSONData } from "$lib/composables/data-loader";
-  import { publications } from "$lib/staticData/publications";
-
-//   let publications = [];
 
   let panelOpen = false;
+  let publications = [];
 
   onMount(async () => {
-    // Disbled till squarspace fixes their garbage domain service
-    // publications = await fetchJSONData("publications");
+    publications = await fetchJSONData("publications");
   });
 </script>
 
@@ -50,29 +47,6 @@
           </Cell>
         {/each}
       </LayoutGrid>
-
-      <!-- <LayoutGrid>
-				{#each publications.slice(0, 2) as { title, conference, date, notes }}
-					<Cell span={6}>
-						<Card>
-							<div class="pub">
-								<h1>{title}</h1>
-								<LayoutGrid style="padding: 2px">
-									<Cell span={3}><p>{date}</p></Cell>
-									<Cell span={9} style="text-align: right;"><p>{conference}</p></Cell>
-								</LayoutGrid>
-
-								{#if notes.length > 0}
-									<h4>Notes:</h4>
-									{#each notes as note}
-										<p>- {note}</p>
-									{/each}
-								{/if}
-							</div>
-						</Card>
-					</Cell>
-				{/each}
-			</LayoutGrid> -->
 
       <Header
         style="color: whitesmoke;

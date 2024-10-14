@@ -8,7 +8,7 @@
 </script>
 
 <header>
-  <div class="corner" style="width:calc(3*48px);"></div>
+  <div class="leftCorner"></div>
 
   <nav>
     <ul>
@@ -126,5 +126,19 @@
 
   a {
     font-style: normal;
+  }
+
+  .leftCorner {
+    width: calc(3 * 48px);
+  }
+
+  @media (max-width: 768px) {
+    .leftCorner {
+      width: 0px;
+    }
+
+    nav {
+      width: 50%;
+    }
   }
 </style>
