@@ -4,7 +4,7 @@
 
   import githubLogo from "$lib/images/icons/githubLogo.png";
   import emailLogo from "$lib/images/icons/emailLogo.png";
-  import linkedInLogo from "$lib/images/icons/linkedInLogo.png";
+  //   import linkedInLogo from "$lib/images/icons/linkedInLogo.png";
 </script>
 
 <header>
@@ -25,7 +25,7 @@
 
   <div class="corner">
     <a href="https://www.linkedin.com/in/ben-barcaskey/">
-      <img src={linkedInLogo} alt="LinkedIn" />
+      <!-- <img src={linkedInLogo} alt="LinkedIn" /> -->
     </a>
   </div>
   <div class="corner">

@@ -25,16 +25,26 @@
         "SQLAlchemy",
       ],
     },
-    AWS: {
-      iconURL: awsIcon,
+    Linux: {
+      iconURL: linuxIcon,
       subSkills: [
-        "Lambda",
-        "EC2",
-        "S3",
-        "Cognito",
-        "SQS",
-        "Cloudwatch",
-        "Rekognition",
+        "Debian, Fedora, Rocky Linux",
+        "Proxmox Virtual Enviroment",
+        "Self Hosting",
+        "Raspberry Pi Development",
+        "Apache & Nginx http Server",
+        "Bash Scripting",
+      ],
+    },
+    Rust: {
+      iconURL: rustIcon,
+      subSkills: [
+        "Wasm Development",
+        "Rocket Framework",
+        "Rocket_ws (socket.io)",
+        "Asynchronous Multithreading",
+        "Serde_json",
+        "Tokio Async",
       ],
     },
     TypeScript: {
@@ -49,15 +59,27 @@
         "React",
       ],
     },
-    Rust: {
-      iconURL: rustIcon,
+    AWS: {
+      iconURL: awsIcon,
       subSkills: [
-        "Wasm Development",
-        "Rocket Framework",
-        "Rocket_ws (socket.io)",
-        "Asynchronous Multithreading",
-        "Serde_json",
-        "Tokio Async",
+        "Lambda",
+        "EC2",
+        "S3",
+        "Cognito",
+        "SQS",
+        "Cloudwatch",
+        "Rekognition",
+      ],
+    },
+
+    "Other Languages / Framworks": {
+      subSkills: [
+        "SQL (Postgres)",
+        "MongoDB",
+        "Postgres TimescaleDB",
+        "C/C++",
+        "Swift",
+        "C#",
       ],
     },
     "Java/Kotlin": {
@@ -71,27 +93,7 @@
         "JSON/CSV Parsing",
       ],
     },
-    "Other Languages / Framworks": {
-      subSkills: [
-        "SQL (Postgres)",
-        "MongoDB",
-        "Postgres TimescaleDB",
-        "C/C++",
-        "Swift",
-        "C#",
-      ],
-    },
-    Linux: {
-      iconURL: linuxIcon,
-      subSkills: [
-        "Systemctl Services",
-        "Raspberry Pi Development",
-        "GUI and terminal/SSH",
-        "Debian, Fedora, Arch",
-        "Apache & Nginx http Server",
-        "Bash Scripting",
-      ],
-    },
+
     "Other Skills": {
       subSkills: [
         "Public Speaking",
